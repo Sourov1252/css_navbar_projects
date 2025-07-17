@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(19, 19, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  left: 0;
+  bottom: -10%;
+  background: linear-gradient(
+    to right,
+    red 0%,
+    orange 16.66%,
+    yellow 33.33%,
+    green 50%,
+    blue 66.66%,
+    indigo 83.33%,
+    violet 100%
+  );
+  background-size: 200% 10px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.1s ease;
+}
+a:hover::after {
+  background-position: 100% 0;
+}
