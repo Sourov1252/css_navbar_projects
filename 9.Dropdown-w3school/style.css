@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.dropdown-1 div {
+  border: 1px solid hsl(0, 0%, 80%);
+  background-color: seashell;
+  padding: 20px 30px;
+  width: 200px;
+}
+
+.dropdown-1 div:last-child {
+  display: none;
+  /* z-index: 1; */
+  position: absolute;
+  border: none;
+}
+.dropdown-1:hover {
+  cursor: pointer;
+}
+.dropdown-1:hover .dropdown-list {
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 5px 16px 0px hsl(0, 0%, 80%);
+  z-index: 1000;
+}
+
+.dropdown-2 div:first-child {
+  border: 1px solid hsl(120, 60%, 35%);
+  padding: 16px 24px;
+  background-color: hsl(120, 60%, 40%);
+  color: white;
+}
+.dropdown-2 div:first-child:hover {
+  cursor: pointer;
+  background-color: hsl(120, 60%, 37%);
+}
+.dropdown-2 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 24px;
+}
+.dropdown-2 a:hover {
+  background-color: hsl(0, 0%, 96%);
+}
+.dropdown-2 div:last-child {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+.dropdown-2:hover .dropdown-list-2 {
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 5px 16px 0px hsl(0, 0%, 80%);
+  z-index: 1000;
+}
+.dropdown-3 div:first-child {
+  width: 150px;
+  height: 100px;
+  background-image: url("./images/img_5terre.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid hsl(0, 0%, 60%);
+  margin-bottom: 5px;
+}
+.dropdown-list-3 {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 300px;
+  border: 1px solid hsl(0, 0%, 50%);
+}
+.dropdown-list-3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.dropdown-list-3 div {
+  text-align: center;
+  padding: 8px 0;
+}
+.dropdown-3:hover {
+  cursor: pointer;
+}
+.dropdown-3:hover .dropdown-list-3 {
+  cursor: pointer;
+  display: block;
+  box-shadow: 0 5px 16px 0px hsl(0, 0%, 80%);
+  z-index: 1000;
+}
